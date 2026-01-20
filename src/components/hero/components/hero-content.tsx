@@ -21,7 +21,7 @@ export function HeroContent() {
             Learn more
           </PrimaryGradientButton>
         </Link>
-        <Link href="#partnerships">
+        <Link href="#contact">
           <SecondaryButton size="lg" className="shadow-sm">
             Become a supplier
           </SecondaryButton>

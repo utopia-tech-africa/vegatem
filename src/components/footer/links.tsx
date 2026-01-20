@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram, X, Youtube } from "lucide-react";
 import { Logo } from "../nav/logo";
 
 const Links = () => {
@@ -38,17 +38,37 @@ const Links = () => {
             FOLLOW US
           </h3>
           <div className="flex flex-col gap-3 md:gap-4 text-base text-white leading-[130%] font-satoshi">
-            <a href="" className="flex gap-2 items-center">
+            <a
+              href="https://x.com/vegatemgh"
+              className="flex gap-2 items-center"
+              target="_blank"
+            >
+              <span>X</span>
+              <span> (formerly Twitter)</span>
+            </a>
+            <a
+              href="https://web.facebook.com/vegatemgh"
+              className="flex gap-2 items-center"
+              target="_blank"
+            >
               <span>
                 <Facebook className="w-4 h-4" />
               </span>
               <span> Facebook</span>
             </a>
-            <a href="" className="flex gap-2 items-center">
+            <a
+              href="https://www.instagram.com/vegatemgh/"
+              className="flex gap-2 items-center"
+              target="_blank"
+            >
               <Instagram className="w-4 h-4" />
               <span>Instagram</span>
             </a>
-            <a href="" className="flex gap-2 items-center">
+            <a
+              href="https://www.youtube.com/@vegatemgh"
+              className="flex gap-2 items-center"
+              target="_blank"
+            >
               <Youtube className="w-4 h-4" />
               <span>Youtube</span>
             </a>
