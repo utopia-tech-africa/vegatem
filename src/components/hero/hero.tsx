@@ -6,7 +6,7 @@ import { ComponentLayout } from "../component-layout";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen">
+    <section className="relative w-full">
       {/* Background image */}
       <div className="absolute -z-10 inset-y-0 left-0 w-full md:w-[60%]">
         <Image
