@@ -19,10 +19,7 @@ export function HeroContent() {
           Learn more
         </PrimaryGradientButton>
 
-        <SecondaryButton
-          size="lg"
-          className="border border-secondary-3/80 shadow-sm"
-        >
+        <SecondaryButton size="lg" className="shadow-sm">
           Become a supplier
         </SecondaryButton>
       </div>
