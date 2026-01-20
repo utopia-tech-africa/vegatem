@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PrimaryGradientButton } from "../../custom-buttons/primary-gradient-button";
 import { SecondaryButton } from "@/components/custom-buttons/secondary-button";
 
@@ -15,13 +16,16 @@ export function HeroContent() {
       </p>
 
       <div className="flex sm:flex-row flex-wrap justify-evenly sm:justify-start gap-4 pt-4 mx-auto md:mx-0">
-        <PrimaryGradientButton size="lg" className="">
-          Learn more
-        </PrimaryGradientButton>
-
-        <SecondaryButton size="lg" className="shadow-sm">
-          Become a supplier
-        </SecondaryButton>
+        <Link href="#how-it-works">
+          <PrimaryGradientButton size="lg" className="">
+            Learn more
+          </PrimaryGradientButton>
+        </Link>
+        <Link href="#partnerships">
+          <SecondaryButton size="lg" className="shadow-sm">
+            Become a supplier
+          </SecondaryButton>
+        </Link>
       </div>
     </div>
   );
