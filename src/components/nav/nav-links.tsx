@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const NAV_LINKS = [
-  { label: "About Vegatem®", href: "#about" },
+  { label: "About Vegatem®", href: "#about-vegatem" },
   { label: "How it works", href: "#how-it-works" },
   { label: "Partnerships", href: "#partnerships" },
 ];

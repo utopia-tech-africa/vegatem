@@ -1,4 +1,5 @@
 import { SecondaryButton } from "@/components/custom-buttons/secondary-button";
+import Link from "next/link";
 
 export function WhatsVegatemContent() {
   return (
@@ -22,9 +23,11 @@ export function WhatsVegatemContent() {
       </ul>
 
       <div className="pt-4">
-        <SecondaryButton className="border border-secondary-3 shadow-sm">
-          Become a retailer
-        </SecondaryButton>
+        <Link href="#partnerships">
+          <SecondaryButton className="border border-secondary-3 shadow-sm">
+            Become a retailer
+          </SecondaryButton>
+        </Link>
       </div>
     </div>
   );
