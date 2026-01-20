@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import NavBar from "@/components/nav/nav-bar";
+import Footer from "@/components/footer/footer";
 
 /* Satoshi */
 const satoshi = localFont({
@@ -59,6 +60,7 @@ export default function RootLayout({
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

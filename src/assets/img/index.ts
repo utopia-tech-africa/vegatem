@@ -1,5 +1,4 @@
 import logo from "./vegatem-logo.webp";
-import heroBgGradient from "./hero-bg-gradient.webp";
 import heroImage from "./hero-image.webp";
 import howItWorksImage1 from "./how-it-works-image-1.webp";
 import howItWorksImage2 from "./how-it-works-image-2.webp";
