@@ -1,4 +1,4 @@
-import { LocateIcon, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const ConnectSection = () => {
   return (
@@ -7,8 +7,9 @@ const ConnectSection = () => {
         Connect
       </span>
 
-      <h2 className="font-clash font-extrabold text-secondary-1 text-3xl md:text-4xl lg:text-[48px] leading-[120%]">
-        We would love to hear from you!
+      <h2 className="font-clash text-nowrap font-extrabold text-secondary-1 text-3xl md:text-4xl lg:text-[48px] leading-[120%]">
+        We would love to hear <br />
+        from you!
       </h2>
 
       <div className="flex flex-col gap-6 text-neutral-700 font-satoshi">

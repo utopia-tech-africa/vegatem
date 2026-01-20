@@ -80,7 +80,7 @@ export const ContactForm = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center h-full overflow-hidden">
+    <div className="flex flex-col justify-center overflow-y-auto">
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
         {/* Full Name */}
         <div>
