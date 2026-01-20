@@ -2,7 +2,6 @@ import Image from "next/image";
 import { HeroContent } from "./components/hero-content";
 import { HeroImage } from "./components/hero-image";
 import { heroBgGradient } from "@/assets/img";
-import { ComponentLayout } from "../component-layout";
 
 export default function Hero() {
   return (
@@ -25,7 +24,7 @@ export default function Hero() {
         </div>
 
         {/* Right image on desktop, top on mobile */}
-        <div className="flex-1 ">
+        <div className="flex-1">
           <HeroImage />
         </div>
       </div>
