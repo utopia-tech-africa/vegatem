@@ -19,14 +19,18 @@ export default function NavBar() {
 
         {/* Right: CTA + Mobile controls */}
         <div className="flex items-center gap-3">
-          <PrimaryGradientButton className="hidden md:inline-flex">
-            Contact Us
-          </PrimaryGradientButton>
+          <Link href="#contact">
+            <PrimaryGradientButton className="hidden md:inline-flex">
+              Contact Us
+            </PrimaryGradientButton>
+          </Link>
 
           {/* Mobile: CTA always visible */}
-          <PrimaryGradientButton className="md:hidden">
-            Contact Us
-          </PrimaryGradientButton>
+          <Link href="#contact">
+            <PrimaryGradientButton className="md:hidden">
+              Contact Us
+            </PrimaryGradientButton>
+          </Link>
 
           {/* Mobile menu */}
           <MobileMenu />
