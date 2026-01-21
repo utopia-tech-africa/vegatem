@@ -3,7 +3,7 @@ import { AccordionItem } from "./accordion-item";
 
 const faqs = [
   {
-    question: "Who should use Vegetem?",
+    question: "Who should use Vegatem?",
     answer:
       "Vegatem is intended for patients diagnosed with malaria in endemic regions. Healthcare providers determine appropriate use based on individual patient needs and clinical assessment.",
   },
@@ -13,7 +13,7 @@ const faqs = [
       "Yes, Vegatem is a prescription medication. It must be dispensed by licensed pharmacies under the direction of qualified healthcare professionals.",
   },
   {
-    question: "Where can I find Vegetem?",
+    question: "Where can I find Vegatem?",
     answer:
       "Vegatem is available through authorized pharmaceutical distributors, retail pharmacies, hospitals, and clinics in malaria-endemic regions. Contact our distribution team to locate suppliers in your area.",
   },
@@ -40,7 +40,7 @@ export const Faq = () => {
             Questions
           </h2>
           <p className="text-black text-sm leading-relaxed">
-            Have questions about Vegetem or want to explore a partnership?{" "}
+            Have questions about Vegatem or want to explore a partnership?{" "}
             <br /> Check out our FAQs or get in touch today.
           </p>
         </div>
