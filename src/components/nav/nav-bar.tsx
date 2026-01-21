@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+"use client";
 import { Logo } from "./logo";
 import { NavLinks } from "./nav-links";
 import { MobileMenu } from "./mobile-menu";
@@ -20,14 +20,28 @@ export default function NavBar() {
         {/* Right: CTA + Mobile controls */}
         <div className="flex items-center gap-3">
           <Link href="#contact">
-            <PrimaryGradientButton className="hidden md:inline-flex">
+            <PrimaryGradientButton
+              className="hidden md:inline-flex"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               Contact Us
             </PrimaryGradientButton>
           </Link>
 
           {/* Mobile: CTA always visible */}
           <Link href="#contact">
-            <PrimaryGradientButton className="md:hidden">
+            <PrimaryGradientButton
+              className="md:hidden"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               Contact Us
             </PrimaryGradientButton>
           </Link>

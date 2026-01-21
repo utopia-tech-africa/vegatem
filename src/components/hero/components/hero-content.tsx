@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { PrimaryGradientButton } from "../../custom-buttons/primary-gradient-button";
 import { SecondaryButton } from "@/components/custom-buttons/secondary-button";
@@ -17,12 +18,27 @@ export function HeroContent() {
 
       <div className="flex sm:flex-row flex-wrap justify-evenly sm:justify-start gap-4 pt-4 mx-auto md:mx-0">
         <Link href="#how-it-works">
-          <PrimaryGradientButton size="lg" className="">
+          <PrimaryGradientButton
+            size="lg"
+            onClick={() => {
+              document.getElementById("how-it-works")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
             Learn more
           </PrimaryGradientButton>
         </Link>
         <Link href="#contact">
-          <SecondaryButton size="lg" className="shadow-sm">
+          <SecondaryButton
+            size="lg"
+            className="shadow-sm"
+            onClick={() => {
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
             Become a supplier
           </SecondaryButton>
         </Link>

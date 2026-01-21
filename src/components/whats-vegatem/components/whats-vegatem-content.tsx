@@ -1,3 +1,5 @@
+"use client";
+
 import { SecondaryButton } from "@/components/custom-buttons/secondary-button";
 import Link from "next/link";
 
@@ -24,7 +26,14 @@ export function WhatsVegatemContent() {
 
       <div className="pt-4">
         <Link href="#partnerships">
-          <SecondaryButton className="border border-secondary-3 shadow-sm">
+          <SecondaryButton
+            className="border border-secondary-3 shadow-sm"
+            onClick={() => {
+              document.getElementById("partnerships")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
+          >
             Become a retailer
           </SecondaryButton>
         </Link>

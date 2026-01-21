@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 const NAV_LINKS = [
@@ -6,14 +7,21 @@ const NAV_LINKS = [
   { label: "Partnerships", href: "#partnerships" },
 ];
 
+const rawIds = NAV_LINKS.map((link) => link.href.replace("#", ""));
+
 export function NavLinks() {
   return (
     <nav className="hidden md:flex items-center gap-8">
-      {NAV_LINKS.map((link) => (
+      {NAV_LINKS.map((link, i) => (
         <Link
           key={link.label}
           href={link.href}
           className=" font-bold text-foreground/80 hover:text-primary-2 transition"
+          onClick={() => {
+            document.getElementById(rawIds[i])?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
         >
           {link.label}
         </Link>

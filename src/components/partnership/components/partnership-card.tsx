@@ -1,6 +1,7 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 interface PartnershipCardProps {
   image: StaticImageData;
@@ -40,11 +41,16 @@ export default function PartnershipCard({
           {description}
         </p>
 
-        <Link href="#contact">
-          <Button className="w-fit rounded-sm bg-white text-secondary-1 font-satoshi font-bold text-lg hover:bg-white/90 cursor-pointer">
-            Reach out
-          </Button>
-        </Link>
+        <Button
+          className="w-fit rounded-sm bg-white text-secondary-1 font-satoshi font-bold text-lg hover:bg-white/90 cursor-pointer"
+          onClick={() => {
+            document.getElementById("contact")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+        >
+          Reach out
+        </Button>
       </div>
     </div>
   );
