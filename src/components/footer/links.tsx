@@ -17,9 +17,9 @@ const Links = () => {
             QUICK LINKS
           </h3>
           <div className="flex flex-col gap-3 md:gap-4 text-base text-white leading-[130%] font-satoshi">
-            <a>Fixtures & Results</a>
-            <a>Clubs</a>
-            <a>News</a>
+            <a href="#about-vegatem">About Vegatem</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#partnership">Partnerships</a>
           </div>
         </div>
 

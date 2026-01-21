@@ -2,7 +2,7 @@ import PartnershipCards from "./components/partnership-cards";
 
 export default function Partnership() {
   return (
-    <section className="py-16">
+    <section id="partnership" className="py-16">
       <div className="mb-12 text-center">
         <p className="mb-3 font-satoshi text-sm text-primary-1 font-extrabold">
           Partnerships
