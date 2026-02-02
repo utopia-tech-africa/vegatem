@@ -38,7 +38,7 @@ const Links = () => {
             CONTACT
           </h3>
           <a
-            href="https://x.com/vegatemgh"
+            href="tel:0593802668"
             className="flex gap-2 items-center"
             target="_blank"
           >
