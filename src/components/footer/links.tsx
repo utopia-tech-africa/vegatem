@@ -1,4 +1,4 @@
-import { Facebook, Instagram, X, Youtube } from "lucide-react";
+import { Facebook, Instagram, PhoneCall, X, Youtube } from "lucide-react";
 import { Logo } from "../nav/logo";
 
 const Links = () => {
@@ -31,6 +31,22 @@ const Links = () => {
             <a>Privacy Policy</a>
             <a>Terms of Use</a>
           </div>
+        </div>
+
+        <div className="flex flex-col gap-4 md:gap-8 min-w-35 text-white">
+          <h3 className="font-clash font-semibold text-[16px] md:text-[18px]  leading-6.75">
+            CONTACT
+          </h3>
+          <a
+            href="tel:0593802668"
+            className="flex gap-2 items-center"
+            target="_blank"
+          >
+            <span>
+              <PhoneCall />
+            </span>
+            <span>0593802668</span>
+          </a>
         </div>
 
         <div className="flex flex-col gap-4 md:gap-8 min-w-35">
