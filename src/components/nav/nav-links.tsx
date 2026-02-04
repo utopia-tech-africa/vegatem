@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { label: "About Vegatem®", href: "#about-vegatem" },
   { label: "How it works", href: "#how-it-works" },
   { label: "Partnerships", href: "#partnerships" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const rawIds = NAV_LINKS.map((link) => link.href.replace("#", ""));
