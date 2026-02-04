@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import NavBar from "@/components/nav/nav-bar";
-import Footer from "@/components/footer/footer";
 import Script from "next/script";
 
 /* Satoshi */
@@ -192,9 +190,7 @@ export default function RootLayout({
       <body
         className={`${satoshi.variable} ${clashDisplay.variable} antialiased`}
       >
-        <NavBar />
         {children}
-        <Footer />
       </body>
     </html>
   );
