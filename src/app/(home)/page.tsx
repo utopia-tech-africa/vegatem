@@ -4,6 +4,7 @@ import Hero from "@/components/hero/hero";
 import Partnership from "@/components/partnership/partnership";
 import HowItWorks from "@/components/how-it-works/how-it-works";
 import WhatsVegatem from "@/components/whats-vegatem/whats-vegatem";
+import { FeaturedBlogs } from "@/components/featured-blogs/featured-blogs";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Partnership />
       <FaqSection />
       <Contact />
+      {/* FEATURED */}
+      <FeaturedBlogs />
     </main>
   );
 }
