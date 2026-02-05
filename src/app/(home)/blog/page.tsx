@@ -19,9 +19,6 @@ export default async function BlogPage() {
         </p>
       </header>
 
-      {/* FEATURED */}
-      <FeaturedBlogs />
-
       {/* GRID / EMPTY STATE */}
       {blogs.length === 0 ? (
         <EmptyState
