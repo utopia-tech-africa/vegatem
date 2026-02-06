@@ -1,3 +1,5 @@
+"use client";
+
 import { PortableText } from "next-sanity";
 import { portableTextComponents } from "@/components/portable-text/portable-text-components";
 
