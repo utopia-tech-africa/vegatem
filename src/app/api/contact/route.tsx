@@ -15,16 +15,18 @@ const contactSchema = z.object({
 });
 
 export async function POST(req: Request) {
-  try {
-    const body = await req.json();
-    const data = contactSchema.parse(body);
+  const body = await req.json();
+  const data = contactSchema.parse(body);
 
+  const email = <ContactEmail {...data} />;
+
+  try {
     await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL!,
       to: [process.env.CONTACT_TO_EMAIL!],
       replyTo: data.email,
       subject: `New Contact Form Submission — ${data.name}`,
-      react: <ContactEmail {...data} />,
+      react: email,
     });
 
     return NextResponse.json({ success: true });

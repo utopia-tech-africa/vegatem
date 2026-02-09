@@ -4,9 +4,16 @@ import {
   Container,
   Section,
   Text,
-  Hr,
   Heading,
+  Img,
+  Row,
+  Column,
+  Link,
 } from "@react-email/components";
+
+const IMAGES = {
+  logo: "https://res.cloudinary.com/dowv4fs9p/image/upload/v1770639241/vegatem-logo_pdwmiq.webp",
+};
 
 export interface ContactEmailProps {
   name: string;
@@ -33,6 +40,7 @@ export default function ContactEmail({
           fontFamily:
             "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
           padding: "20px 0",
+          margin: 0,
         }}
       >
         <Container
@@ -45,61 +53,43 @@ export default function ContactEmail({
             boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
           }}
         >
-          {/* Header with gradient */}
+          {/* HEADER */}
           <Section
             style={{
+              backgroundColor: "#1f2937",
               padding: "32px 40px",
-              background: "linear-gradient(135deg, #35A142 0%, #2D8C3A 100%)",
+              textAlign: "center",
             }}
           >
+            <Img
+              src={IMAGES.logo}
+              alt="Vegatem"
+              width={140}
+              height={40}
+              style={{ margin: "0 auto", display: "block" }}
+            />
+
             <Heading
               style={{
                 color: "#ffffff",
-                fontSize: "24px",
+                fontSize: "28px",
                 fontWeight: "bold",
-                margin: "0",
-                textAlign: "center",
+                margin: "16px 0 8px 0",
+                letterSpacing: "-0.025em",
               }}
             >
               New Contact Form Submission
             </Heading>
-            <Text
-              style={{
-                color: "rgba(255, 255, 255, 0.9)",
-                fontSize: "14px",
-                textAlign: "center",
-                marginTop: "8px",
-              }}
-            >
-              You have received a new inquiry through your contact form
-            </Text>
           </Section>
 
           {/* Main content */}
-          <Section
-            style={{
-              padding: "40px",
-            }}
-          >
-            <Section
-              style={{
-                marginBottom: "32px",
-              }}
-            >
+          <Section style={{ padding: "40px" }}>
+            <Section style={{ marginBottom: "32px" }}>
+              <Text style={{ fontSize: "16px", color: "#374151" }}>Hello,</Text>
               <Text
                 style={{
                   fontSize: "16px",
                   color: "#374151",
-                  lineHeight: "1.6",
-                }}
-              >
-                Hello,
-              </Text>
-              <Text
-                style={{
-                  fontSize: "16px",
-                  color: "#374151",
-                  lineHeight: "1.6",
                   marginTop: "12px",
                 }}
               >
@@ -107,225 +97,145 @@ export default function ContactEmail({
               </Text>
             </Section>
 
-            {/* Details Card */}
             <Section
               style={{
                 backgroundColor: "#f8fafc",
-                borderRadius: "8px",
-                padding: "24px",
+                borderRadius: "10px",
+                padding: "28px",
                 borderLeft: "4px solid #35A142",
                 marginBottom: "32px",
               }}
             >
               <Text
                 style={{
-                  fontSize: "18px",
+                  fontSize: "20px",
                   fontWeight: "bold",
-                  color: "#111827",
-                  marginBottom: "20px",
+                  marginBottom: "24px",
+                  paddingBottom: "12px",
                 }}
               >
                 Contact Information
               </Text>
 
-              <Section
-                style={{
-                  marginBottom: "4px",
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    color: "#6B7280",
-                    margin: "0 0 4px 0",
-                  }}
-                >
-                  Name
-                </Text>
-                <Text
-                  style={{
-                    fontSize: "16px",
-                    color: "#111827",
-                    margin: "0 0 16px 0",
-                  }}
-                >
-                  {name}
-                </Text>
-              </Section>
-
-              <Section
-                style={{
-                  marginBottom: "4px",
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    color: "#6B7280",
-                    margin: "0 0 4px 0",
-                  }}
-                >
-                  Email Address
-                </Text>
-                <Text
-                  style={{
-                    fontSize: "16px",
-                    color: "#111827",
-                    margin: "0 0 16px 0",
-                  }}
-                >
-                  {email}
-                </Text>
-              </Section>
-
-              <Section
-                style={{
-                  marginBottom: "4px",
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    color: "#6B7280",
-                    margin: "0 0 4px 0",
-                  }}
-                >
-                  Phone Number
-                </Text>
-                <Text
-                  style={{
-                    fontSize: "16px",
-                    color: "#111827",
-                    margin: "0 0 16px 0",
-                  }}
-                >
-                  {phone}
-                </Text>
-              </Section>
-
-              <Section
-                style={{
-                  marginBottom: "4px",
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    color: "#6B7280",
-                    margin: "0 0 4px 0",
-                  }}
-                >
-                  Organization
-                </Text>
-                <Text
-                  style={{
-                    fontSize: "16px",
-                    color: "#111827",
-                    margin: "0 0 16px 0",
-                  }}
-                >
-                  {organization}
-                </Text>
-              </Section>
-
-              <Section
-                style={{
-                  marginBottom: "4px",
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    color: "#6B7280",
-                    margin: "0 0 4px 0",
-                  }}
-                >
-                  Area of Interest
-                </Text>
-                <Text
-                  style={{
-                    fontSize: "16px",
-                    color: "#111827",
-                    margin: "0 0 16px 0",
-                    fontWeight: "500",
-                  }}
-                >
-                  {interest}
-                </Text>
-              </Section>
+              <Row>
+                <Column>
+                  <Text>Name</Text>
+                  <Text>{name}</Text>
+                </Column>
+              </Row>
+              <Row>
+                <Column>
+                  <Text>Email Address</Text>
+                  <Text>{email}</Text>
+                </Column>
+              </Row>
+              <Row>
+                <Column>
+                  <Text>Phone Number</Text>
+                  <Text>{phone}</Text>
+                </Column>
+              </Row>
+              <Row>
+                <Column>
+                  <Text>Organization</Text>
+                  <Text>{organization}</Text>
+                </Column>
+              </Row>
+              <Row>
+                <Column>
+                  <Text>Area of Interest</Text>
+                  <Text>{interest}</Text>
+                </Column>
+              </Row>
             </Section>
 
-            {/* Message Section */}
             {message && (
-              <Section
-                style={{
-                  marginBottom: "32px",
-                }}
-              >
-                <Text
-                  style={{
-                    fontSize: "18px",
-                    fontWeight: "bold",
-                    color: "#111827",
-                    marginBottom: "12px",
-                  }}
-                >
+              <Section style={{ marginBottom: "32px" }}>
+                <Text style={{ fontSize: "20px", fontWeight: "bold" }}>
                   Message
                 </Text>
                 <Section
                   style={{
                     backgroundColor: "#f8fafc",
-                    padding: "20px",
-                    borderRadius: "8px",
+                    padding: "24px",
+                    borderRadius: "10px",
                     border: "1px solid #e5e7eb",
                   }}
                 >
-                  <Text
-                    style={{
-                      fontSize: "16px",
-                      color: "#374151",
-                      lineHeight: "1.6",
-                      margin: "0",
-                      fontStyle: "italic",
-                    }}
-                  >
-                    "{message}"
-                  </Text>
+                  <Text style={{ fontStyle: "italic" }}>{message}</Text>
                 </Section>
               </Section>
             )}
 
-            <Hr
-              style={{
-                borderColor: "#e5e7eb",
-                margin: "32px 0",
-              }}
-            />
-
-            {/* Footer */}
-            <Section
-              style={{
-                textAlign: "center",
-              }}
-            >
-              <Text
-                style={{
-                  fontSize: "14px",
-                  color: "#6B7280",
-                  margin: "0",
-                }}
-              >
-                This email was sent from your website's contact form.
+            <Section style={{ textAlign: "center" }}>
+              <Text style={{ fontSize: "14px", color: "#6B7280" }}>
+                This email was sent from your website&apos;s contact form.
               </Text>
             </Section>
           </Section>
 
-          {/* Bottom accent */}
+          {/* FOOTER */}
+          <Section
+            style={{
+              padding: "40px 40px 32px 40px",
+              backgroundColor: "#00540A",
+              textAlign: "center",
+            }}
+          >
+            <Row style={{ justifyContent: "center", marginBottom: "16px" }}>
+              <Column>
+                <Link
+                  href="https://x.com/vegatemgh"
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "12px",
+                    margin: "0 12px",
+                    textDecoration: "none",
+                  }}
+                >
+                  X (Twitter)
+                </Link>
+                <Link
+                  href="https://web.facebook.com/vegatemgh"
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "12px",
+                    margin: "0 12px",
+                    textDecoration: "none",
+                  }}
+                >
+                  Facebook
+                </Link>
+                <Link
+                  href="https://www.instagram.com/vegatemgh/"
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "12px",
+                    margin: "0 12px",
+                    textDecoration: "none",
+                  }}
+                >
+                  Instagram
+                </Link>
+                <Link
+                  href="https://www.youtube.com/@vegatemgh"
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "12px",
+                    margin: "0 12px",
+                    textDecoration: "none",
+                  }}
+                >
+                  YouTube
+                </Link>
+              </Column>
+            </Row>
+
+            <Text style={{ color: "rgba(255,255,255,0.85)", fontSize: "12px" }}>
+              © {new Date().getFullYear()} Vegatem GH. All rights reserved.
+            </Text>
+          </Section>
+
           <Section
             style={{
               height: "4px",
