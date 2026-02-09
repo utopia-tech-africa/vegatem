@@ -62,7 +62,7 @@ export const ContactForm = () => {
 
       setSubmitMessage({
         type: "success",
-        text: "Form submitted successfully! Check your email for confirmation.",
+        text: "Form submitted successfully! We'll get back to you shortly.",
       });
 
       form.reset();
