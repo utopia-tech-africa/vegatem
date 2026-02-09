@@ -85,7 +85,9 @@ export default function ContactEmail({
           {/* Main content */}
           <Section style={{ padding: "40px" }}>
             <Section style={{ marginBottom: "32px" }}>
-              <Text style={{ fontSize: "16px", color: "#374151" }}>Hello,</Text>
+              <Text style={{ fontSize: "16px", color: "#374151" }}>
+                Hi Vegatem,
+              </Text>
               <Text
                 style={{
                   fontSize: "16px",
@@ -97,6 +99,7 @@ export default function ContactEmail({
               </Text>
             </Section>
 
+            {/* Contact Info */}
             <Section
               style={{
                 backgroundColor: "#f8fafc",
@@ -111,7 +114,6 @@ export default function ContactEmail({
                   fontSize: "20px",
                   fontWeight: "bold",
                   marginBottom: "24px",
-                  paddingBottom: "12px",
                 }}
               >
                 Contact Information
@@ -119,32 +121,41 @@ export default function ContactEmail({
 
               <Row>
                 <Column>
-                  <Text>Name</Text>
-                  <Text>{name}</Text>
+                  <Text>
+                    <strong>Name:</strong> {name}
+                  </Text>
                 </Column>
               </Row>
+
               <Row>
                 <Column>
-                  <Text>Email Address</Text>
-                  <Text>{email}</Text>
+                  <Text>
+                    <strong>Email:</strong> {email}
+                  </Text>
                 </Column>
               </Row>
+
               <Row>
                 <Column>
-                  <Text>Phone Number</Text>
-                  <Text>{phone}</Text>
+                  <Text>
+                    <strong>Phone Number:</strong> {phone}
+                  </Text>
                 </Column>
               </Row>
+
               <Row>
                 <Column>
-                  <Text>Organization</Text>
-                  <Text>{organization}</Text>
+                  <Text>
+                    <strong>Organization:</strong> {organization}
+                  </Text>
                 </Column>
               </Row>
+
               <Row>
                 <Column>
-                  <Text>Area of Interest</Text>
-                  <Text>{interest}</Text>
+                  <Text>
+                    <strong>Area of Interest:</strong> {interest}
+                  </Text>
                 </Column>
               </Row>
             </Section>
