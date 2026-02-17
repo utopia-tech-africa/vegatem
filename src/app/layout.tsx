@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     template: "%s | Vegatem®",
   },
   description:
-    "Vegatem® is a proven malaria treatment designed for patients in endemic regions. Effective, accessible care supporting hospitals, pharmacies, NGOs, and public health initiatives worldwide.",
+    "Vegatem Ghana official source for artemether lumefantrine malaria treatment. View product details, dosage instructions, safety guidance, and healthcare information. Vegatem is a trusted artemether and lumefantrine malaria treatment in Ghana. Discover product information, dosage guidance, safety details, and where to access quality Vegatem tablets.",
 
   /* ------------------------------------------------------------
    * Application & Brand Info
